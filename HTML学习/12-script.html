@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>document.write("hello");</script>
+	<noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+	<p id="abc">123</p>
+	<script>
+		function hehe() {
+			document.getElementById("abc").innerHTML="hehe hehe"
+		}
+	</script>
+	<button type="button" onclick="hehe()">get</button>
+	<script>
+		function eheh(){
+			document.getElementById("abc").innerHTML="i ffohodjngorhindog";
+			document.getElementById("abc").style.color="#876345"
+		}
+	</script>
+	<input type="button" value="hehe" onclick="eheh()">
+	<!-- button input 两者的区别在哪？ -->
+
+ </body>
+</html>

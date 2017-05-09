@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="mycanvas" width="300" height="300" style="border: 1px solid #000">gd</canvas>
+	<script>
+		var c=document.getElementById("mycanvas");
+		var ctx=c.getContext("2d");
+		ctx.fillStyle="#348736";
+		ctx.fillRect(20,30,150,150);
+		ctx.moveTo(10,10);
+		ctx.lineTo(40,50);
+		ctx.stroke();
+		ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+       	</script>
+    <canvas id="abc" width="550" height="550" style="border: 1px solid #000"></canvas>
+    <script>
+    	var c=document.getElementById("abc");
+    	var ctx=c.getContext("2d");
+        ctx.font="30px Arial";
+        ctx.fillText("hello world",30,20);
+        ctx.strokeText("hey hey hey",50,50);
+        var grd=ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle=grd;
+        ctx.fillRect(50,70,150,90);
+    </script>
+</body>
+</html>
