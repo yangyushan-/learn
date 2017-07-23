@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  /*overflow: hidden;*/
+}
+li{
+  float: left;
+}
+a:link,a:visited{
+  background-color: #865839;
+  color: #fff;
+  display: block;
+  width: 70px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+a:hover,a:active{
+  background-color: #569483;
+}
+.abc{
+  position: relative;
+  display: inline-block;
+}
+.abcd{
+  position: absolute;
+  display: none;
+  background-color: #F1F1F1;
+  /*min-width: 160px;*/
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+}
+.abc:hover .abcd{
+  display: block;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="https://www.baidu.com" target="_blank">home</a></li>
+  <li><a href="https://www.baidu.com">blog</a></li>
+  <li class="abc">
+    <a href="https://www.baidu.com">haha</a>
+    <div class="abcd">
+      <a href="https://www.baidu.com">hehe</a>
+      <a href="https://www.baidu.com">oooo</a>
+    </div>
+  </li>
+  <li class="abc">
+    <a href="https://www.baidu.com">about</a>
+    <div class="abcd">
+      <a href="https://www.baidu.com">hehe</a>
+      <a href="https://www.baidu.com">oooo</a>
+      <a href="https://www.baidu.com">oooo</a>
+      <a href="https://www.baidu.com">oooo</a>
+      <a href="https://www.baidu.com">oooo</a>
+    </div>
+  </li>
+  <li><a href="https://www.baidu.com">photo</a></li>
+</ul>
+</body>
+</html>
